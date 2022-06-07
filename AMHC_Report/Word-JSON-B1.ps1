@@ -1,7 +1,7 @@
-Import-Module .\AMHC_Report\PSWriteWord\PSWriteWord.psm1
+Import-Module .\AMHC_Report\PSWriteWord\PSWriteWord.psm1 -Force
 
 ### Define the Word file
-$FilePath = ".\AMHC_Report\MilestoneT.docx"
+$FilePath = ".\AMHC_Report\MilestoneTB2.docx"
 $WordDocument = Get-WordDocument $FilePath
 
 ### Define JSON file
