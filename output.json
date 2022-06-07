@@ -1,0 +1,61 @@
+{
+    "ServerName":  "SGIU-MS",
+    "TimeStamp":  "2022-05-17 15:16:57Z",
+    "MilestoneXProtectVersion":  {
+                                     "SLC":  "M01-C01-221-01-6C42E0",
+                                     "Product":  "XProtect Corporate 2022 R1"
+                                 },
+    "MilestoneCareStatus":  {
+                                "CarePlus":  "9/29/2027",
+                                "ExpirationDate":  "9/29/2027"
+                            },
+    "XProtectCumulativeUpdates":  {
+                                      "CumulativeUpdates":  null
+                                  },
+    "MediaDeletionDuetoLowDiskSpace":  {
+                                           "DeletionDuetoLowDiskSpaceErrorList":  null
+                                       },
+    "MediaDeletionDuetoOverflow":  {
+                                       "MediaDeletionDuetoOverflowList":  null
+                                   },
+    "SystemRAMutilization":  {
+                                 "Samples":  [
+                                                 {
+                                                     "TimeStamp":  "2022-05-17 15:16:52Z",
+                                                     "Value":  6825044
+                                                 }
+                                             ],
+                                 "Max":  null
+                             },
+    "SystemCPUutilization":  {
+                                 "Samples":  [
+                                                 {
+                                                     "TimeStamp":  "2022-05-17 15:16:57Z",
+                                                     "Value":  9
+                                                 }
+                                             ],
+                                 "Max":  100
+                             },
+    "FailoverConfiguration":  {
+
+                              },
+    "HardwareaAcelerationCapability":  [
+                                           {
+                                               "VideoProcessor":  null,
+                                               "Name":  "Microsoft Hyper-V Video",
+                                               "AdapterRAM":  null,
+                                               "DriverDate":  "\/Date(1150848000000)\/",
+                                               "DriverVersion":  "10.0.20348.1"
+                                           },
+                                           {
+                                               "VideoProcessor":  null,
+                                               "Name":  "Microsoft Remote Display Adapter",
+                                               "AdapterRAM":  null,
+                                               "DriverDate":  "\/Date(1150848000000)\/",
+                                               "DriverVersion":  "10.0.20348.617"
+                                           }
+                                       ],
+    "AntivirusPresence":  {
+                              "Antivirus":  null
+                          }
+}
