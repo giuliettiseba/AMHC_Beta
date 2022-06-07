@@ -1,11 +1,11 @@
-Import-Module PSWriteWord #-Force
+Import-Module .\AMHC_Report\PSWriteWord\PSWriteWord.psm1
 
 ### Define the Word file
-$FilePath = ".\MilestoneT.docx"
+$FilePath = ".\AMHC_Report\MilestoneT.docx"
 $WordDocument = Get-WordDocument $FilePath
 
 ### Define JSON file
-$JPath = "..\output.json"
+$JPath = ".\output.json"
 
 ### Test from JSON
 $in = Get-Content $JPath | ConvertFrom-Json

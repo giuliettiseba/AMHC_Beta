@@ -1,6 +1,6 @@
 {
     "ServerName":  "SGIU-MS",
-    "TimeStamp":  "2022-06-07 11:09:15Z",
+    "TimeStamp":  "2022-06-07 11:17:19Z",
     "MilestoneXProtectVersion":  {
                                      "SLC":  "M01-C01-221-01-6C42E0",
                                      "Product":  "XProtect Corporate 2022 R1"
@@ -14,9 +14,6 @@
                                   },
     "MediaDeletionDuetoLowDiskSpace":  {
                                            "DeletionDuetoLowDiskSpaceErrorList":  [
-                                                                                      "2022-06-07 09:29:14.360-05:00 [  8856] INFO        - Deleting table \u0027df735a88-2e07-451e-b49b-6c8d4233574f_ARCHIVE_2022-06-07_09-25-28\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
-                                                                                      "2022-06-07 09:33:54.568-05:00 [  8896] INFO        - Archiving table \u00276786aeb3-9142-4ecd-8c1f-05f5897cf022_LOCAL_2022-06-07_09-28-27\u0027 from bank \u0027C:\\MediaDatabase\\134e8410-4598-4e20-9145-71eb426a335c\u0027 begun! Maximum size limit (5120 MB) reached for bank!",
-                                                                                      "2022-06-07 09:34:24.590-05:00 [  8856] INFO        - Deleting table \u002767031be4-061d-4d6a-a4c6-f924ea6321e7_ARCHIVE_2022-06-07_09-27-50\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
                                                                                       "2022-06-07 09:34:24.590-05:00 [  8852] INFO        - Deleting table \u00276786aeb3-9142-4ecd-8c1f-05f5897cf022_ARCHIVE_2022-06-07_09-28-27\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
                                                                                       "2022-06-07 09:55:35.669-05:00 [  8880] INFO        - Archiving table \u0027e6ade48f-a2ce-4731-89ec-985ab2ad8740_LOCAL_2022-06-07_09-30-16\u0027 from bank \u0027C:\\MediaDatabase\\134e8410-4598-4e20-9145-71eb426a335c\u0027 begun! Maximum size limit (5120 MB) reached for bank!",
                                                                                       "2022-06-07 09:56:05.701-05:00 [  8856] INFO        - Deleting table \u0027e6ade48f-a2ce-4731-89ec-985ab2ad8740_ARCHIVE_2022-06-07_09-30-16\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
@@ -33,7 +30,10 @@
                                                                                       "2022-06-07 10:31:46.882-05:00 [  8852] INFO        - Deleting table \u002767031be4-061d-4d6a-a4c6-f924ea6321e7_ARCHIVE_2022-06-07_10-27-55\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
                                                                                       "2022-06-07 10:31:46.882-05:00 [  8856] INFO        - Deleting table \u00276786aeb3-9142-4ecd-8c1f-05f5897cf022_ARCHIVE_2022-06-07_10-28-31\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
                                                                                       "2022-06-07 10:53:27.512-05:00 [  8888] INFO        - Archiving table \u0027e6ade48f-a2ce-4731-89ec-985ab2ad8740_LOCAL_2022-06-07_10-30-17\u0027 from bank \u0027C:\\MediaDatabase\\134e8410-4598-4e20-9145-71eb426a335c\u0027 begun! Maximum size limit (5120 MB) reached for bank!",
-                                                                                      "2022-06-07 10:53:57.516-05:00 [  8852] INFO        - Deleting table \u0027e6ade48f-a2ce-4731-89ec-985ab2ad8740_ARCHIVE_2022-06-07_10-30-17\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank."
+                                                                                      "2022-06-07 10:53:57.516-05:00 [  8852] INFO        - Deleting table \u0027e6ade48f-a2ce-4731-89ec-985ab2ad8740_ARCHIVE_2022-06-07_10-30-17\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
+                                                                                      "2022-06-07 11:13:48.024-05:00 [  8892] INFO        - Archiving table \u00273c32d106-22b7-4f5e-be76-e4a8b14f1321_LOCAL_2022-06-07_10-30-50\u0027 from bank \u0027C:\\MediaDatabase\\134e8410-4598-4e20-9145-71eb426a335c\u0027 begun! Maximum size limit (5120 MB) reached for bank!",
+                                                                                      "2022-06-07 11:16:48.101-05:00 [  8876] INFO        - Archiving table \u0027b9ef4908-df44-4397-a9a5-de5d25c8aced_LOCAL_2022-06-07_10-37-34\u0027 from bank \u0027C:\\MediaDatabase\\134e8410-4598-4e20-9145-71eb426a335c\u0027 begun! Maximum size limit (5120 MB) reached for bank!",
+                                                                                      "2022-06-07 11:16:58.105-05:00 [  8884] INFO        - Archiving table \u00272a0d10bc-f387-4874-b321-cf41238bb2fa_LOCAL_2022-06-07_10-40-59\u0027 from bank \u0027C:\\MediaDatabase\\134e8410-4598-4e20-9145-71eb426a335c\u0027 begun! Maximum size limit (5120 MB) reached for bank!"
                                                                                   ]
                                        },
     "MediaDeletionDuetoOverflow":  {
@@ -47,24 +47,24 @@
     "SystemRAMutilization":  {
                                  "Samples":  [
                                                  {
-                                                     "TimeStamp":  "2022-06-07 11:09:04Z",
-                                                     "Value":  8105160
+                                                     "TimeStamp":  "2022-06-07 11:17:08Z",
+                                                     "Value":  8158956
                                                  },
                                                  {
-                                                     "TimeStamp":  "2022-06-07 11:09:05Z",
-                                                     "Value":  8107104
+                                                     "TimeStamp":  "2022-06-07 11:17:09Z",
+                                                     "Value":  8150756
                                                  },
                                                  {
-                                                     "TimeStamp":  "2022-06-07 11:09:07Z",
-                                                     "Value":  8111500
+                                                     "TimeStamp":  "2022-06-07 11:17:10Z",
+                                                     "Value":  8153316
                                                  },
                                                  {
-                                                     "TimeStamp":  "2022-06-07 11:09:08Z",
-                                                     "Value":  8110000
+                                                     "TimeStamp":  "2022-06-07 11:17:11Z",
+                                                     "Value":  8162012
                                                  },
                                                  {
-                                                     "TimeStamp":  "2022-06-07 11:09:09Z",
-                                                     "Value":  8109520
+                                                     "TimeStamp":  "2022-06-07 11:17:13Z",
+                                                     "Value":  8159364
                                                  }
                                              ],
                                  "Max":  null
@@ -72,24 +72,24 @@
     "SystemCPUutilization":  {
                                  "Samples":  [
                                                  {
-                                                     "TimeStamp":  "2022-06-07 11:09:11Z",
-                                                     "Value":  11
+                                                     "TimeStamp":  "2022-06-07 11:17:15Z",
+                                                     "Value":  2
                                                  },
                                                  {
-                                                     "TimeStamp":  "2022-06-07 11:09:12Z",
-                                                     "Value":  14
+                                                     "TimeStamp":  "2022-06-07 11:17:16Z",
+                                                     "Value":  8
                                                  },
                                                  {
-                                                     "TimeStamp":  "2022-06-07 11:09:13Z",
-                                                     "Value":  10
+                                                     "TimeStamp":  "2022-06-07 11:17:17Z",
+                                                     "Value":  12
                                                  },
                                                  {
-                                                     "TimeStamp":  "2022-06-07 11:09:14Z",
-                                                     "Value":  0
+                                                     "TimeStamp":  "2022-06-07 11:17:18Z",
+                                                     "Value":  2
                                                  },
                                                  {
-                                                     "TimeStamp":  "2022-06-07 11:09:15Z",
-                                                     "Value":  3
+                                                     "TimeStamp":  "2022-06-07 11:17:19Z",
+                                                     "Value":  27
                                                  }
                                              ],
                                  "Max":  100
