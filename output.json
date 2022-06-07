@@ -1,6 +1,6 @@
 {
     "ServerName":  "SGIU-MS",
-    "TimeStamp":  "2022-05-17 15:16:57Z",
+    "TimeStamp":  "2022-06-07 11:09:15Z",
     "MilestoneXProtectVersion":  {
                                      "SLC":  "M01-C01-221-01-6C42E0",
                                      "Product":  "XProtect Corporate 2022 R1"
@@ -13,16 +13,58 @@
                                       "CumulativeUpdates":  null
                                   },
     "MediaDeletionDuetoLowDiskSpace":  {
-                                           "DeletionDuetoLowDiskSpaceErrorList":  null
+                                           "DeletionDuetoLowDiskSpaceErrorList":  [
+                                                                                      "2022-06-07 09:29:14.360-05:00 [  8856] INFO        - Deleting table \u0027df735a88-2e07-451e-b49b-6c8d4233574f_ARCHIVE_2022-06-07_09-25-28\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
+                                                                                      "2022-06-07 09:33:54.568-05:00 [  8896] INFO        - Archiving table \u00276786aeb3-9142-4ecd-8c1f-05f5897cf022_LOCAL_2022-06-07_09-28-27\u0027 from bank \u0027C:\\MediaDatabase\\134e8410-4598-4e20-9145-71eb426a335c\u0027 begun! Maximum size limit (5120 MB) reached for bank!",
+                                                                                      "2022-06-07 09:34:24.590-05:00 [  8856] INFO        - Deleting table \u002767031be4-061d-4d6a-a4c6-f924ea6321e7_ARCHIVE_2022-06-07_09-27-50\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
+                                                                                      "2022-06-07 09:34:24.590-05:00 [  8852] INFO        - Deleting table \u00276786aeb3-9142-4ecd-8c1f-05f5897cf022_ARCHIVE_2022-06-07_09-28-27\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
+                                                                                      "2022-06-07 09:55:35.669-05:00 [  8880] INFO        - Archiving table \u0027e6ade48f-a2ce-4731-89ec-985ab2ad8740_LOCAL_2022-06-07_09-30-16\u0027 from bank \u0027C:\\MediaDatabase\\134e8410-4598-4e20-9145-71eb426a335c\u0027 begun! Maximum size limit (5120 MB) reached for bank!",
+                                                                                      "2022-06-07 09:56:05.701-05:00 [  8856] INFO        - Deleting table \u0027e6ade48f-a2ce-4731-89ec-985ab2ad8740_ARCHIVE_2022-06-07_09-30-16\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
+                                                                                      "2022-06-07 10:14:56.295-05:00 [  8888] INFO        - Archiving table \u00273c32d106-22b7-4f5e-be76-e4a8b14f1321_LOCAL_2022-06-07_09-30-41\u0027 from bank \u0027C:\\MediaDatabase\\134e8410-4598-4e20-9145-71eb426a335c\u0027 begun! Maximum size limit (5120 MB) reached for bank!",
+                                                                                      "2022-06-07 10:17:46.414-05:00 [  8892] INFO        - Archiving table \u0027b9ef4908-df44-4397-a9a5-de5d25c8aced_LOCAL_2022-06-07_09-37-24\u0027 from bank \u0027C:\\MediaDatabase\\134e8410-4598-4e20-9145-71eb426a335c\u0027 begun! Maximum size limit (5120 MB) reached for bank!",
+                                                                                      "2022-06-07 10:18:16.443-05:00 [  8876] INFO        - Archiving table \u00272a0d10bc-f387-4874-b321-cf41238bb2fa_LOCAL_2022-06-07_09-40-23\u0027 from bank \u0027C:\\MediaDatabase\\134e8410-4598-4e20-9145-71eb426a335c\u0027 begun! Maximum size limit (5120 MB) reached for bank!",
+                                                                                      "2022-06-07 10:25:36.776-05:00 [  8884] INFO        - Archiving table \u0027df735a88-2e07-451e-b49b-6c8d4233574f_LOCAL_2022-06-07_10-25-31\u0027 from bank \u0027C:\\MediaDatabase\\134e8410-4598-4e20-9145-71eb426a335c\u0027 begun! Maximum size limit (5120 MB) reached for bank!",
+                                                                                      "2022-06-07 10:25:56.822-05:00 [  8852] INFO        - Deleting table \u00273c32d106-22b7-4f5e-be76-e4a8b14f1321_ARCHIVE_2022-06-07_09-30-41\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
+                                                                                      "2022-06-07 10:27:56.808-05:00 [  8896] INFO        - Archiving table \u002767031be4-061d-4d6a-a4c6-f924ea6321e7_LOCAL_2022-06-07_10-27-55\u0027 from bank \u0027C:\\MediaDatabase\\134e8410-4598-4e20-9145-71eb426a335c\u0027 begun! Maximum size limit (5120 MB) reached for bank!",
+                                                                                      "2022-06-07 10:28:06.820-05:00 [  8856] INFO        - Deleting table \u0027b9ef4908-df44-4397-a9a5-de5d25c8aced_ARCHIVE_2022-06-07_09-37-24\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
+                                                                                      "2022-06-07 10:28:06.821-05:00 [  8852] INFO        - Deleting table \u00272a0d10bc-f387-4874-b321-cf41238bb2fa_ARCHIVE_2022-06-07_09-40-20\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
+                                                                                      "2022-06-07 10:28:06.865-05:00 [  8856] INFO        - Deleting table \u0027df735a88-2e07-451e-b49b-6c8d4233574f_ARCHIVE_2022-06-07_10-25-31\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
+                                                                                      "2022-06-07 10:31:16.867-05:00 [  8880] INFO        - Archiving table \u00276786aeb3-9142-4ecd-8c1f-05f5897cf022_LOCAL_2022-06-07_10-28-31\u0027 from bank \u0027C:\\MediaDatabase\\134e8410-4598-4e20-9145-71eb426a335c\u0027 begun! Maximum size limit (5120 MB) reached for bank!",
+                                                                                      "2022-06-07 10:31:46.882-05:00 [  8852] INFO        - Deleting table \u002767031be4-061d-4d6a-a4c6-f924ea6321e7_ARCHIVE_2022-06-07_10-27-55\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
+                                                                                      "2022-06-07 10:31:46.882-05:00 [  8856] INFO        - Deleting table \u00276786aeb3-9142-4ecd-8c1f-05f5897cf022_ARCHIVE_2022-06-07_10-28-31\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank.",
+                                                                                      "2022-06-07 10:53:27.512-05:00 [  8888] INFO        - Archiving table \u0027e6ade48f-a2ce-4731-89ec-985ab2ad8740_LOCAL_2022-06-07_10-30-17\u0027 from bank \u0027C:\\MediaDatabase\\134e8410-4598-4e20-9145-71eb426a335c\u0027 begun! Maximum size limit (5120 MB) reached for bank!",
+                                                                                      "2022-06-07 10:53:57.516-05:00 [  8852] INFO        - Deleting table \u0027e6ade48f-a2ce-4731-89ec-985ab2ad8740_ARCHIVE_2022-06-07_10-30-17\u0027 in bank \u0027C:\\ARCHIVE\\D950DD51-3456-43D9-8418-81DF8F64848F\u0027 begun! Maximum size limit (1024 MB) reached for bank."
+                                                                                  ]
                                        },
     "MediaDeletionDuetoOverflow":  {
-                                       "MediaDeletionDuetoOverflowList":  null
+                                       "MediaDeletionDuetoOverflowList":  [
+                                                                              "2022-05-30 09:39:10.300-05:00 [    60] INFO       - e6ade48f-a2ce-4731-89ec-985ab2ad8740  My fav camera         OnRecordingStateChanged, isRecordingRecords=True overflow",
+                                                                              "2022-05-30 09:39:18.800-05:00 [    40] INFO       - b9ef4908-df44-4397-a9a5-de5d25c8aced  FLEXIDOME IP starlight 5000i (10.1.1.107) - Microphone 1  Creating performance counter for device frame group media db consumer overflow",
+                                                                              "2022-06-07 08:50:42.768-05:00 [    92] WARNING    - 2a0d10bc-f387-4874-b321-cf41238bb2fa  FLEXIDOME IP starlight 5000i (10.1.1.107) - Camera 1  Device communication error (NoDataException). Error: overflow",
+                                                                              "2022-06-07 10:10:04.034-05:00 [    92] WARNING    - 2a0d10bc-f387-4874-b321-cf41238bb2fa  FLEXIDOME IP starlight 5000i (10.1.1.107) - Camera 1  Device communication error (NoDataException). Error: overflow"
+                                                                          ]
                                    },
     "SystemRAMutilization":  {
                                  "Samples":  [
                                                  {
-                                                     "TimeStamp":  "2022-05-17 15:16:52Z",
-                                                     "Value":  6825044
+                                                     "TimeStamp":  "2022-06-07 11:09:04Z",
+                                                     "Value":  8105160
+                                                 },
+                                                 {
+                                                     "TimeStamp":  "2022-06-07 11:09:05Z",
+                                                     "Value":  8107104
+                                                 },
+                                                 {
+                                                     "TimeStamp":  "2022-06-07 11:09:07Z",
+                                                     "Value":  8111500
+                                                 },
+                                                 {
+                                                     "TimeStamp":  "2022-06-07 11:09:08Z",
+                                                     "Value":  8110000
+                                                 },
+                                                 {
+                                                     "TimeStamp":  "2022-06-07 11:09:09Z",
+                                                     "Value":  8109520
                                                  }
                                              ],
                                  "Max":  null
@@ -30,8 +72,24 @@
     "SystemCPUutilization":  {
                                  "Samples":  [
                                                  {
-                                                     "TimeStamp":  "2022-05-17 15:16:57Z",
-                                                     "Value":  9
+                                                     "TimeStamp":  "2022-06-07 11:09:11Z",
+                                                     "Value":  11
+                                                 },
+                                                 {
+                                                     "TimeStamp":  "2022-06-07 11:09:12Z",
+                                                     "Value":  14
+                                                 },
+                                                 {
+                                                     "TimeStamp":  "2022-06-07 11:09:13Z",
+                                                     "Value":  10
+                                                 },
+                                                 {
+                                                     "TimeStamp":  "2022-06-07 11:09:14Z",
+                                                     "Value":  0
+                                                 },
+                                                 {
+                                                     "TimeStamp":  "2022-06-07 11:09:15Z",
+                                                     "Value":  3
                                                  }
                                              ],
                                  "Max":  100

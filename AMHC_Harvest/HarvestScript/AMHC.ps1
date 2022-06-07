@@ -11,13 +11,11 @@ $ServerName = $env:COMPUTERNAME
 $TimeStamp = Get-Date
 
 ## Perfomance Counter Sample Amount 
-$samples = 1
+$samples = 5
 
 $CompletePercentage = 0;
-$inc = 100 / $FunctionsToCall;
 
-$RecordingServerLogPath = "{$env:ProgramData}\Milestone\Mileston Recording Server\Logs"
-
+$RecordingServerLogPath = "$env:ProgramData\Milestone\XProtect Recording Server\Logs\"
 
 #endregion
 
@@ -26,21 +24,24 @@ $MilestoneServices = Get-CimInstance -Query "Select * from Win32_Service Where N
 | Select-Object PSComputerName, Name, Description, State, StartMode, StartName, PathName `
 | Sort-Object -Property PSComputerName, Name 
 
-$IsManagementServer = ($MilestoneServices -match 'Milestone XProtect Management Server').Count > 0
+$IsManagementServer = ($MilestoneServices -match 'Milestone XProtect Management Server').Count -eq 1
 
-$IsRecordingServer = ($MilestoneServices -match 'Milestone XProtect Recording Server').Count > 0
+$IsRecordingServer = ($MilestoneServices -match 'Milestone XProtect Recording Server').Count -eq 1
 
-$HasMilestoneService = ($MilestoneServices -match 'Milestone').Count > 0
+$HasMilestoneService = ($MilestoneServices -match 'Milestone').Count -gt 0
 
-# DEBUG
-$IsManagementServer = $true
-$IsRecordingServer = $false
-$HasMilestoneService = $false
+# # DEBUG
+# $IsManagementServer = $true
+# $IsRecordingServer = $false
+# $HasMilestoneService = $false
 
 $FunctionsToCall = 1
 if ($IsManagementServer) { $FunctionsToCall += 3 }
 if ($IsRecordingServer) { $FunctionsToCall += 2 }
 if ($HasMilestoneService) { $FunctionsToCall += 5 }
+
+$inc = 100 / $FunctionsToCall;
+
 
 #endregion
 
@@ -165,18 +166,25 @@ if ($IsRecordingServer) {
 
     #JOIN DATABASE LOGS AND FIND THE ERROR
 
+    $MaximunSizeError = (Get-Content ($RecordingServerLogPath + 'Database*')) -match 'Maximum size' | Select-Object -Last 20
+    $MaximunSizeError_strArray = $MaximunSizeError | ForEach-Object {"$($_)"}
+
     $MediaDeletionDuetoLowDiskSpace = [pscustomobject]@{
-        DeletionDuetoLowDiskSpaceErrorList = $DeletionDuetoLowDiskSpaceErrorList
+        DeletionDuetoLowDiskSpaceErrorList = $MaximunSizeError_strArray
     }
     #endregion
     
     #region Media Deletion Due to Overflow
     $CompletePercentage += $inc; Write-Progress -Activity "Media Deletion Due to Overflow" -Status "$CompletePercentage% Complete:" -PercentComplete $CompletePercentage
 
-    # READ DEVICEHANDLING LOG AND FINF OVERFLOW ERROR
+    # READ DEVICEHANDLING LOG AND FIND OVERFLOW ERROR
+
+    $MediaDeletionDuetoOverflow = (Get-Content ($RecordingServerLogPath + 'DeviceHandling.log')) -match 'overflow' | Select-Object -Last 20
+    
+    $MediaDeletionDuetoOverflow_strArray = $MediaDeletionDuetoOverflow | ForEach-Object {"$($_)"}
 
     $MediaDeletionDuetoOverflow = [pscustomobject]@{
-        MediaDeletionDuetoOverflowList = $MediaDeletionDuetoOverflowList
+        MediaDeletionDuetoOverflowList = $MediaDeletionDuetoOverflow_strArray
     }
     #endregion
 }
@@ -199,6 +207,8 @@ $Output = [PSCustomObject]@{
 }
 
 $CompletePercentage += $inc; Write-Progress -Activity "Write Output" -Status "100% Complete:" -PercentComplete 100
-$Output | ConvertTo-Json -Depth 100 | Set-Content .\output.json
+$jsonOutput = $Output | ConvertTo-Json -Depth 100
+$jsonOutput | Set-Content .\output.json
     
+Write-Progress -Activity "Write Output" -Status "Ready" -Completed
 #endregion
