@@ -56,13 +56,13 @@ if ($HasMilestoneService) {
     }
     #endregion
 
+    $TotalMemory = Get-CIMInstance Win32_OperatingSystem | Select-Object TotalVisibleMemorySize
+
     #region System RAM utilization
     $SystemRAMutilization = [pscustomobject]@{
         Samples = New-Object System.Collections.Generic.List[System.Object]
-        Max     = ($TotalMemory | Where-Object PSComputerName -eq $s.ComputerName).TotalVisibleMemorySize
+        Max     = $TotalMemory.TotalVisibleMemorySize
     }
-
-    $TotalMemory = Get-CIMInstance Win32_OperatingSystem | Select-Object TotalVisibleMemorySize
 
     for ($i = 0; $i -lt $samples; $i++) {
         $CompletePercentage += $inc / $samples ; Write-Progress -Activity " System RAM utilization" -Status "$CompletePercentage% Complete:" -PercentComplete $CompletePercentage

@@ -1,4 +1,4 @@
-Import-Module .\AMHC_Report\PSWriteWord\PSWriteWord.psm1 -Force
+Import-Module ".\AMHC_Report\PSWriteWord\PSWriteWord.psm1" -Force
 
 ### Define the Word file
 $FilePath = ".\AMHC_Report\MilestoneTB2.docx"
