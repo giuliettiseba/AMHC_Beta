@@ -41,6 +41,12 @@ $GPU2_1 = $in.HardwareaAcelerationCapability[1].DriverVersion
 $GPU2_2 = $in.HardwareaAcelerationCapability[1].DriverDate
 
 
+# TODO: Read Languaje 
+
+# TODO: Read Location json 
+
+# TODO: Replace hardcoded text with the one readed from json 
+
 ### Headings & Contents
 $MilestoneXProtectVersion_Title = "Checked Item: Milestone XProtect Version"
 $MilestoneXProtectVersion_wwc_text = "Why we check: `r`nStaying up to date on Milestone XProtect versions allows users to take advantage of the latest features, capabilities, and performance optimizations. New features allow users to realize increased reliability, increased security, and reduced total cost of ownership."
@@ -150,7 +156,7 @@ foreach ($Paragraph in $WordDocument.Paragraphs) {
 	
 }
 ### Save document
-Save-WordDocument $WordDocument -FilePath "$destination\Report.docx" -OpenDocument -Supress $true
+Save-WordDocument $WordDocument -FilePath "$destination\Report.docx" -Supress $true
 
 # ### Table of Content update
 # $word = New-Object -ComObject Word.Application
