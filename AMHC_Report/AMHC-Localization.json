@@ -1,0 +1,302 @@
+{
+    "English": {
+        "Milestone XProtect Version": {
+            "Title": "Checked Item: Milestone XProtect Version",
+            "Why we check": "Staying up to date on Milestone XProtect versions allows users to take advantage of the latest features, capabilities, and performance optimizations. New features allow users to realize increased reliability, increased security, and reduced total cost of ownership.",
+            "ResultOK": "Currently [$customerName] is running XProtect [$version]",
+            "Recommendation": "Milestone Recently Released the latest version of XProtect [$ActualVersion]. Milestone recommends upgrading to XProtect [$ActualVersion], to take advantage of the new features and capabilities of the software. This increases the reliability and security of your system. Here is a link to our Version Comparison Tool: [$linkComparisonTool]"
+        },
+        "Milestone Care Status": {
+            "English": {
+                "Title": "Checked Item: Milestone Care Status",
+                "Why we check": "Maintaining active Milestone Care Plus status allows users to upgrade to the latest version of Milestone XProtect as soon as it is released, with no out-of-pocket expense. Maintaining active Care Premium status allows users direct access to Milestone Technical Support 24/7. Users also receive increased priority for telephone calls and all Care Premium support cases receive a Service Level Agreement (SLA) for first response time and status update frequency.",
+                "ResultOK": "[$customer name] taking advantage of Care Premium and will expire on [$datecareplusexpirantion]",
+                "ResultFAIL1": "Currently your Milestone Care Plus status allows you to obtain a free license for the latest available version of the product,[$latestversion]",
+                "ResultFAIL2": "No Care Plus found in the system [$ServerNumbers]",
+                "Recommendation": "An active Care agreement gives you access to updates when they are released without any additional costs, keeping you on the latest and greatest that our software has to offer. Care Premium also gives you additional entitlements like SLA, 24/7 access to support, and priority in the phone queue. You can find more information regarding Care at [$linkcareplusinfo]"
+            },
+            "XProtect Cumulative Updates": {
+                "Title": "Checked Item: XProtect Cumulative Updates",
+                "Why we check": "XProtect Cumulative Updates include all hotfixes available for a specific version of XProtect. These hotfixes are compiled into easy-to-install executables and are updated periodically throughout a software version’s lifecycle. It is strongly recommended to apply the latest XProtect Cumulative Updates to your installation, as they resolve known bugs and other system errors.  ",
+                "ResultFAIL": "No hotfix nor patches found installed on any of the following [$ServerNumbers] servers XXXXXX:[$XProtectComponents] ",
+                "ResultOK": "The following hotfixes were found in servers [$ServerNumbers] ",
+                "Recommendation": "We recommend that you install the cumulative updates available for the corresponding version of the product throughout your system [$linkDonwloadHotfix]"
+            },
+            "Antivirus Presence": {
+                "Title": "Checked Item: Antivirus presence",
+                "Why we check": "Antivirus software configured with real-time scanning can be an important part of your IT security strategy, but it may interfere with XProtect software. Milestone recommends configuring antivirus software so that XProtect processes and recording paths are excluded from real-time scanning.  ",
+                "ResultOK": "Antivirus software found and configured on servers revised [$ServerNumbers]. ",
+                "ResultFAIL": "Antivirus software not found or not configured on servers revised [$ServerNumbers].",
+                "Recommendation": "In case the use of Antivirus is required in your system, it is recommended to check the following article:KB 000001004 - Configure anti-virus software on XProtect systems (best practices)[$linkAVkb]"
+            }
+        },
+        "Media Deletion Due to Low Disk Space ": {
+            "Title": "Checked Item: Media Deletion Due to Low Disk Space",
+            "Why we check": "When free disk space in XProtect recording paths fall below certain thresholds, recorded media may be at risk of deletion. Users often wish to avoid this scenario, as unexpected deletions could mean a loss of situational awareness or regulatory compliance. Adjusting recording configuration or storage hardware can prevent this scenario.",
+            "ResultFAIL": "During session [$RSnumbers] servers were found installed and configured: {$LowDiskErros}",
+            "ResultOK": "There is no Media Deletion Due to low disk space.",
+            "Recommendation": "No additional recommendations. The storage system is working in good condition."
+        },
+        "Media Deletion Due to Overflow": {
+            "Title": "Checked Item: Media Deletion Due to Overflow  ",
+            "Why we check": "When the amount of inbound recorded media exceeds the disk write performance capability of the recording and storage hardware, media may be at risk of deletion due to a scenario called ‘Media Overflow’. Users often wish to avoid this scenario, as unexpected deletions could mean a loss of situational awareness or regulatory compliance. Adjusting recording configuration or storage hardware can prevent this scenario.",
+            "ResultOK": "In the review of the [$RSnumbers] Recording Servers logs, we do not found Overflow messages in the logs.",
+            "ResultFAIL": "In the review of the [$RSnumbers] Recording Servers logs, we found out: XXXXXX",
+            "Recommendation": "It is suggested to review and follow the indications of the following articles for the Recording Server [$linkRSbestpract]."
+        },
+        "System RAM utilization": {
+            "Title": "Checked Item: System RAM utilization",
+            "Why we check": "Maintaining appropriate system RAM utilization is important for optimal performance and reliability. Most XProtect applications have minimum requirements of 2 GB of system RAM, but additional RAM may be necessary for larger systems. Typical recommended amount for best performance are 16 or 32 GB. Recommended utilization should be below 70% of max utilization.   ",
+            "ResultOK": "The [$ServerNumbers] server matches the mimimum requirements according to Milestone recommendations",
+            "ResultFAIL": "The [$ServerNumbers] server does not match the mimimum requirements according to Milestone recommendations",
+            "Recommendation": "No high RAM resource usage issues were found on verified servers. It is suggested to maintain performance monitoring to the equipment used for server or clients, paying attention to processes related to Milestone that may cause an increase in consumption. "
+        },
+        "System CPU utilization": {
+            "Title": "Checked Item: System CPU utilization  ",
+            "Why we check": "Maintaining appropriate system CPU utilization is important for optimal performance and reliability. XProtect will install on most modern Intel or AMD x86 64-bit architecture CPUs (or virtual equivalent), however larger systems will require CPUs with higher performance. Recommended utilization should be below 70% of max utilization.   ",
+            "ResultOK": "No high CPU resource usage issues found on verified [$ServerNumbers] servers.",
+            "ResultFAIL": "High CPU resource usage issues found on verified [$ServerNumbers] servers.",
+            "Recommendation": "It is suggested to maintain performance monitoring of the equipment used for server or clients, paying attention to processes related to Milestone that may cause an increase in consumption.In the case of computers running Smart Client, it is suggested to review the number of cameras per view to avoid a high consumption of CPU resources when a Graphics Card is not available."
+        },
+        "Failover Configuration": {
+            "Title": "Checked Item: Failover Configuration",
+            "Why we check": "Failover Recording servers are used to protect an XProtect system against unplanned system downtime. It is recommended to run Failover servers on any mission critical XProtect Corporate or XProtect Expert Recording Server where archiving is not enabled. This will allow uninterrupted video recording in the event the media database index must be rebuilt.",
+            "ResultOK": "Failover server found or configured on this installation [$RSnumbers].",
+            "ResultFAIL": "Failover server not found or not configured on this installation [$RSnumbers].",
+            "Recommendation": "In case of being a critical operation system, the use of Failover is recommended. For more information about Failover server follow the instructions in the administrator manual:[$linkAdminManual]  "
+        },
+        "Hardware acceleration capability": {
+            "Title": "Checked Item: Hardware acceleration capability  ",
+            "Why we check": "XProtect software can offload Recording Server motion detection tasks to certain Intel or Nvidia GPUs. This offloading of compute tasks frees up performance resources on the CPU and helps reduce the total cost of ownership by allowing users to run more cameras on a Recording Server, without reaching the performance limitations of their CPU. Intel CPUs with Quick Sync Video technology or Nvidia GPUs with Keplar and newer chipsets are required to enable hardware accelerated motion detection.",
+            "ResultOK": "GPU cards or Quick Sync Video found in servers [$RSnumbers]",
+            "ResultFAIL": "No GPU cards nor Quick Sync Video found in servers [$RSnumbers]",
+            "Recommendation": "Graphics cards or GPUs help ease the graphics processing load on the CPU. Therefore, the use of these is recommended to improve system performance. For more information on Hardware Acceleration and compatible devices check the following article: [$linkHWaccelearation] "
+        }
+    },
+    "Spanish": {
+        "Milestone XProtect Version": {
+            "Title": "Checked Item: Milestone XProtect Version",
+            "Why we check": "Staying up to date on Milestone XProtect versions allows users to take advantage of the latest features, capabilities, and performance optimizations. New features allow users to realize increased reliability, increased security, and reduced total cost of ownership.",
+            "ResultOK": "Currently [$customerName] is running XProtect [$version]",
+            "Recommendation": "Milestone Recently Released the latest version of XProtect [$ActualVersion]. Milestone recommends upgrading to XProtect [$ActualVersion], to take advantage of the new features and capabilities of the software. This increases the reliability and security of your system. Here is a link to our Version Comparison Tool: [$linkComparisonTool]"
+        },
+        "Milestone Care Status": {
+            "English": {
+                "Title": "Checked Item: Milestone Care Status",
+                "Why we check": "Maintaining active Milestone Care Plus status allows users to upgrade to the latest version of Milestone XProtect as soon as it is released, with no out-of-pocket expense. Maintaining active Care Premium status allows users direct access to Milestone Technical Support 24/7. Users also receive increased priority for telephone calls and all Care Premium support cases receive a Service Level Agreement (SLA) for first response time and status update frequency.",
+                "ResultOK": "[$customer name] taking advantage of Care Premium and will expire on [$datecareplusexpirantion]",
+                "ResultFAIL1": "Currently your Milestone Care Plus status allows you to obtain a free license for the latest available version of the product,[$latestversion]",
+                "ResultFAIL2": "No Care Plus found in the system [$ServerNumbers]",
+                "Recommendation": "An active Care agreement gives you access to updates when they are released without any additional costs, keeping you on the latest and greatest that our software has to offer. Care Premium also gives you additional entitlements like SLA, 24/7 access to support, and priority in the phone queue. You can find more information regarding Care at [$linkcareplusinfo]"
+            },
+            "XProtect Cumulative Updates": {
+                "Title": "Checked Item: XProtect Cumulative Updates",
+                "Why we check": "XProtect Cumulative Updates include all hotfixes available for a specific version of XProtect. These hotfixes are compiled into easy-to-install executables and are updated periodically throughout a software version’s lifecycle. It is strongly recommended to apply the latest XProtect Cumulative Updates to your installation, as they resolve known bugs and other system errors.  ",
+                "ResultFAIL": "No hotfix nor patches found installed on any of the following [$ServerNumbers] servers XXXXXX:[$XProtectComponents] ",
+                "ResultOK": "The following hotfixes were found in servers [$ServerNumbers] ",
+                "Recommendation": "We recommend that you install the cumulative updates available for the corresponding version of the product throughout your system [$linkDonwloadHotfix]"
+            },
+            "Antivirus Presence": {
+                "Title": "Checked Item: Antivirus presence",
+                "Why we check": "Antivirus software configured with real-time scanning can be an important part of your IT security strategy, but it may interfere with XProtect software. Milestone recommends configuring antivirus software so that XProtect processes and recording paths are excluded from real-time scanning.  ",
+                "ResultOK": "Antivirus software found and configured on servers revised [$ServerNumbers]. ",
+                "ResultFAIL": "Antivirus software not found or not configured on servers revised [$ServerNumbers].",
+                "Recommendation": "In case the use of Antivirus is required in your system, it is recommended to check the following article:KB 000001004 - Configure anti-virus software on XProtect systems (best practices)[$linkAVkb]"
+            }
+        },
+        "Media Deletion Due to Low Disk Space ": {
+            "Title": "Checked Item: Media Deletion Due to Low Disk Space",
+            "Why we check": "When free disk space in XProtect recording paths fall below certain thresholds, recorded media may be at risk of deletion. Users often wish to avoid this scenario, as unexpected deletions could mean a loss of situational awareness or regulatory compliance. Adjusting recording configuration or storage hardware can prevent this scenario.",
+            "ResultFAIL": "During session [$RSnumbers] servers were found installed and configured: {$LowDiskErros}",
+            "ResultOK": "There is no Media Deletion Due to low disk space.",
+            "Recommendation": "No additional recommendations. The storage system is working in good condition."
+        },
+        "Media Deletion Due to Overflow": {
+            "Title": "Checked Item: Media Deletion Due to Overflow  ",
+            "Why we check": "When the amount of inbound recorded media exceeds the disk write performance capability of the recording and storage hardware, media may be at risk of deletion due to a scenario called ‘Media Overflow’. Users often wish to avoid this scenario, as unexpected deletions could mean a loss of situational awareness or regulatory compliance. Adjusting recording configuration or storage hardware can prevent this scenario.",
+            "ResultOK": "In the review of the [$RSnumbers] Recording Servers logs, we do not found Overflow messages in the logs.",
+            "ResultFAIL": "In the review of the [$RSnumbers] Recording Servers logs, we found out: XXXXXX",
+            "Recommendation": "It is suggested to review and follow the indications of the following articles for the Recording Server [$linkRSbestpract]."
+        },
+        "System RAM utilization": {
+            "Title": "Checked Item: System RAM utilization",
+            "Why we check": "Maintaining appropriate system RAM utilization is important for optimal performance and reliability. Most XProtect applications have minimum requirements of 2 GB of system RAM, but additional RAM may be necessary for larger systems. Typical recommended amount for best performance are 16 or 32 GB. Recommended utilization should be below 70% of max utilization.   ",
+            "ResultOK": "The [$ServerNumbers] server matches the mimimum requirements according to Milestone recommendations",
+            "ResultFAIL": "The [$ServerNumbers] server does not match the mimimum requirements according to Milestone recommendations",
+            "Recommendation": "No high RAM resource usage issues were found on verified servers. It is suggested to maintain performance monitoring to the equipment used for server or clients, paying attention to processes related to Milestone that may cause an increase in consumption. "
+        },
+        "System CPU utilization": {
+            "Title": "Checked Item: System CPU utilization  ",
+            "Why we check": "Maintaining appropriate system CPU utilization is important for optimal performance and reliability. XProtect will install on most modern Intel or AMD x86 64-bit architecture CPUs (or virtual equivalent), however larger systems will require CPUs with higher performance. Recommended utilization should be below 70% of max utilization.   ",
+            "ResultOK": "No high CPU resource usage issues found on verified [$ServerNumbers] servers.",
+            "ResultFAIL": "High CPU resource usage issues found on verified [$ServerNumbers] servers.",
+            "Recommendation": "It is suggested to maintain performance monitoring of the equipment used for server or clients, paying attention to processes related to Milestone that may cause an increase in consumption.In the case of computers running Smart Client, it is suggested to review the number of cameras per view to avoid a high consumption of CPU resources when a Graphics Card is not available."
+        },
+        "Failover Configuration": {
+            "Title": "Checked Item: Failover Configuration",
+            "Why we check": "Failover Recording servers are used to protect an XProtect system against unplanned system downtime. It is recommended to run Failover servers on any mission critical XProtect Corporate or XProtect Expert Recording Server where archiving is not enabled. This will allow uninterrupted video recording in the event the media database index must be rebuilt.",
+            "ResultOK": "Failover server found or configured on this installation [$RSnumbers].",
+            "ResultFAIL": "Failover server not found or not configured on this installation [$RSnumbers].",
+            "Recommendation": "In case of being a critical operation system, the use of Failover is recommended. For more information about Failover server follow the instructions in the administrator manual:[$linkAdminManual]  "
+        },
+        "Hardware acceleration capability": {
+            "Title": "Checked Item: Hardware acceleration capability  ",
+            "Why we check": "XProtect software can offload Recording Server motion detection tasks to certain Intel or Nvidia GPUs. This offloading of compute tasks frees up performance resources on the CPU and helps reduce the total cost of ownership by allowing users to run more cameras on a Recording Server, without reaching the performance limitations of their CPU. Intel CPUs with Quick Sync Video technology or Nvidia GPUs with Keplar and newer chipsets are required to enable hardware accelerated motion detection.",
+            "ResultOK": "GPU cards or Quick Sync Video found in servers [$RSnumbers]",
+            "ResultFAIL": "No GPU cards nor Quick Sync Video found in servers [$RSnumbers]",
+            "Recommendation": "Graphics cards or GPUs help ease the graphics processing load on the CPU. Therefore, the use of these is recommended to improve system performance. For more information on Hardware Acceleration and compatible devices check the following article: [$linkHWaccelearation] "
+        }
+    },
+    "French": {
+        "Milestone XProtect Version": {
+            "Title": "Élément vérifié : Version de Milestone XProtect",
+            "Why we check": "Rester à jour sur les versions de Milestone XProtect permet aux utilisateurs de profiter des dernières fonctionnalités, capacités et optimisations des performances. Les nouvelles fonctionnalités permettent aux utilisateurs de bénéficier d'une fiabilité accrue, d'une sécurité renforcée et d'un coût total de possession réduit.",
+            "ResultOK": "Actuellement, [$customerName] utilise XProtect [$version].",
+            "ResultFAIL": "[$customerName] utilise la dernière version de XProtect [$version]",
+            "Recommendation": "Milestone a récemment publié la dernière version de XProtect [$ActualVersion]. Milestone recommande la mise à niveau vers XProtect [$ActualVersion], pour profiter des nouvelles fonctionnalités et capacités du logiciel. Cela augmente la fiabilité et la sécurité de votre système. Voici un lien vers notre outil de comparaison des versions : [$linkComparisonTool]"
+        },
+        "Milestone Care Status": {
+            "English": {
+                "Title": "Checked Item: Milestone Care Status",
+                "Why we check": "Le maintien du statut actif de Milestone Care Plus permet aux utilisateurs de passer à la dernière version de Milestone XProtect dès sa sortie, sans frais supplémentaires. Le maintien du statut actif Care Premium permet aux utilisateurs d'avoir un accès direct au support technique de Milestone 24 heures sur 24 et 7 jours sur 7. Les utilisateurs bénéficient également d'une priorité accrue pour les appels téléphoniques et tous les cas d'assistance Care Premium bénéficient d'un accord de niveau de service (SLA) pour le temps de première réponse et la fréquence de mise à jour du statut.",
+                "ResultOK": "[$nom du client] qui bénéficie de Care Premium et qui expirera le [$datecareplusexpirantion].",
+                "ResultFAIL1": "Actuellement, votre statut Milestone Care Plus vous permet d'obtenir une licence gratuite pour la dernière version disponible du produit, [$latestversion]",
+                "ResultFAIL2": "Aucun Care Plus trouvé dans le système [$ServerNumbers]",
+                "Recommendation": "Un contrat Care actif vous donne accès aux mises à jour dès qu'elles sont publiées, sans frais supplémentaires, vous permettant ainsi de rester mis-à-jour de ce que notre logiciel a à offrir. Care Premium vous donne également des droits supplémentaires tels que l'accord de niveau de service, l'accès au support 24/7 et la priorité dans la file d'attente téléphonique. Vous pouvez trouver plus d'informations sur Care à l'adresse [$linkcareplusinfo]."
+            },
+            "XProtect Cumulative Updates": {
+                "Title": "Élément vérifié : Mises à jour cumulatives XProtect",
+                "Why we check": "Les mises à jour cumulatives XProtect comprennent tous les correctifs disponibles pour une version spécifique de XProtect. Ces correctifs sont compilés dans des exécutables faciles à installer et sont mis à jour périodiquement tout au long du cycle de vie d'une version du logiciel. Il est fortement recommandé d'appliquer les dernières mises à jour cumulatives de XProtect à votre installation, car elles résolvent des bogues connus et d'autres erreurs système.",
+                "ResultFAIL": "Aucun hotfix ni correctif n'a été trouvé installé sur l'un des serveurs suivants [$ServerNumbers] XXXXXX : [$XProtectComponents]. ",
+                "ResultOK": "Les correctifs suivants ont été trouvés [$ServerNumbers]",
+                "Recommandation": "Nous vous recommandons d'installer les mises à jour cumulatives disponibles pour la version correspondante du produit sur l'ensemble de votre système [$linkDonwloadHotfix]"
+            },
+            "Antivirus Presence": {
+                "Title": "Élément vérifié : Présence d'un antivirus",
+                "Why we check": "Un logiciel antivirus configuré avec une analyse en temps réel peut être un élément important de votre stratégie de sécurité informatique, mais il peut interférer avec le logiciel XProtect. Milestone recommande de configurer le logiciel antivirus de sorte que les processus et les chemins d'enregistrement XProtect soient exclus de l'analyse en temps réel.",
+                "ResultOK": "Logiciel antivirus trouvé et configuré sur les serveurs [$ServerNumbers] ",
+                "ResultFAIL": "Logiciel antivirus non trouvé ou non configuré sur les serveurs [$ServerNumbers]",
+                "Recommendation": "Dans le cas où l'utilisation d'un Antivirus est nécessaire dans votre système, il est recommandé de consulter l'article suivant : KB 000001004 - Configurer un logiciel antivirus sur les systèmes XProtect (meilleures pratiques) [$linkAVkb]."
+            }
+        },
+        "Media Deletion Due to Low Disk Space ": {
+            "Title": "Élément vérifié : Suppression des médias en raison du manque d'espace disque",
+            "Why we check": "Pourquoi nous vérifions: Lorsque l'espace disque libre dans les chemins d'enregistrement XProtect passe sous certains seuils, les supports enregistrés risquent d'être supprimés. Les utilisateurs souhaitent souvent éviter ce scénario, car des suppressions inattendues pourraient signifier une perte de connaissance de la situation ou de conformité réglementaire. L'ajustement de la configuration d'enregistrement ou du matériel de stockage peut empêcher ce scénario.",
+            "ResultFAIL": "Pendant la session [$RSnumbers] des serveurs ont été trouvés installés et configurés : {$LowDiskErros}",
+            "ResultOK": "Il n'y a pas de suppression de média en raison d'un espace disque insuffisant.",
+            "Recommendation": "Aucune recommandation supplémentaire. Le système de stockage fonctionne en bon état."
+        },
+        "Media Deletion Due to Overflow": {
+            "Title": "Élément vérifié : Suppression des médias en raison d'un débordement",
+            "Why we check": "Lorsque la quantité de supports enregistrés entrants dépasse la capacité d'écriture du matériel d'enregistrement et de stockage, les supports risquent d'être supprimés en raison d'un scénario appelé ",
+            "Media Overflow": "Les utilisateurs souhaitent souvent éviter ce scénario,car des suppressions inattendues peuvent entraîner une perte de connaissance de la situation ou de conformité réglementaire.L 'ajustement de la configuration de l'enregistrement ou du matériel de stockage peut empêcher ce scénario.",
+            "ResultOK": "Lors de l'examen des journaux des serveurs d'enregistrement de [$RSnumbers], nous n'avons pas trouvé de messages de débordement dans les journaux",
+            "ResultFAIL": "Dans l'examen des journaux des serveurs d'enregistrement [$RSnumbers], nous avons trouvé: XXXXXX",
+            "Recommendation": "Il est suggéré d'examiner et de suivre les indications des articles suivants pour le serveur d'enregistrement [$linkRSbestpract]."
+        },
+        "System RAM utilization": {
+            "Title": "Élément vérifié : utilisation de la RAM du système",
+            "Why we check": "Le maintien d'une utilisation appropriée de la RAM du système est important pour des performances et une fiabilité optimales. La plupart des applications XProtect ont des exigences minimales de 2 Go de RAM système, mais de la RAM supplémentaire peut être nécessaire pour les systèmes plus grands. Les quantités typiquement recommandées pour de meilleures performances sont de 16 ou 32 Go. L'utilisation recommandée doit être inférieure à 70 % de l'utilisation maximale.   ",
+            "ResultOK": "Le serveur [$ServerNumbers] répond aux exigences minimales selon les recommandations du Milestone.",
+            "ResultFAIL": "Le serveur [$ServerNumbers] ne correspond pas aux exigences minimales selon les recommandations du Milestone.",
+            "Recommendation": "Aucun problème d'utilisation élevée des ressources RAM n'a été constaté sur les serveurs vérifiés. Il est suggéré de maintenir un contrôle des performances de l'équipement utilisé pour le serveur ou les clients, en faisant attention aux processus liés à Milestone qui peuvent entraîner une augmentation de la consommation."
+        },
+        "System CPU utilization": {
+            "Title": "Élément vérifié : Utilisation du CPU du système",
+            "Why we check": "Le maintien d'une utilisation appropriée du CPU du système est important pour des performances et une fiabilité optimales. XProtect s'installera sur la plupart des processeurs modernes Intel ou AMD x86 à architecture 64 bits (ou équivalent virtuel), mais les systèmes plus importants nécessiteront des processeurs plus performants. L'utilisation recommandée doit être inférieure à 70 % de l'utilisation maximale.  ",
+            "ResultOK": "Aucun problème d'utilisation élevée des ressources du processeur n'a été constaté sur les serveurs vérifiés [$ServerNumbers].",
+            "ResultFAIL": "Problèmes d'utilisation élevée des ressources CPU trouvés sur les serveurs vérifiés [$ServerNumbers]",
+            "Recommendation": " Il est suggéré de maintenir un contrôle des performances de l'équipement utilisé pour le serveur ou les clients, en faisant attention aux processus liés à Milestone qui peuvent entraîner une augmentation de la consommation.Dans le cas d'ordinateurs exécutant Smart Client, il est suggéré de revoir le nombre de caméras par vue pour éviter une consommation élevée de ressources CPU lorsqu'une carte graphique n'est pas disponible."
+        },
+        "Failover Configuration": {
+            "Title": "Élément vérifié : Configuration du Serveur d'enregistrement de redundance",
+            "Why we check": "Les serveurs d'enregistrement de redondance sont utilisés pour protéger un système XProtect contre les temps d'arrêt non planifiés du système. Il est recommandé d'exécuter des serveurs de redondance sur tout serveur d'enregistrement critique XProtect Corporate ou XProtect Expert où l'archivage n'est pas activé. Cela permettra un enregistrement vidéo ininterrompu dans le cas où l'index de la base de données des médias doit être reconstruit. ",
+            "ResultOK": "Serveur d'enregistrement de redondance trouvé ou configuré sur cette installation [$RSnumbers].",
+            "ResultFAIL": "Serveur d'enregistrement de redondance non trouvé ou non configuré sur cette installation [$RSnumbers].",
+            "Recommendation": "Dans le cas d'un système d'exploitation critique, l'utilisation du Serveur d'Enregistrement de Redondance est recommandée. Pour plus d'informations sur le serveur d'enregistrement de redondance, suivez les instructions du manuel de l'administrateur : [$linkAdminManual].  "
+        },
+        "Hardware acceleration capability": {
+            "Title": "Élément vérifié : capacité d'accélération de Hardware ",
+            "Why we check": "Le logiciel XProtect peut décharger les tâches de détection de mouvement du serveur d'enregistrement sur certains GPU Intel ou Nvidia. Ce déchargement des tâches de calcul libère des ressources de performance sur le CPU et contribue à réduire le coût total de possession en permettant aux utilisateurs d'exécuter plus de caméras sur un serveur d'enregistrement, sans atteindre les limites de performance de leur CPU. Les CPU Intel avec la technologie Quick Sync Video ou les GPU Nvidia avec Keplar et les chipsets plus récents sont nécessaires pour activer la détection de mouvement accélérée par le Hardware.",
+            "ResultOK": "Cartes GPU ou Quick Sync Video trouvées dans les serveurs [$RSnumbers]",
+            "ResultFAIL": "Aucune carte graphique GPU ni Quick Sync Video n'a été trouvée dans les serveurs [$RSnumbers]",
+            "Recommendation": "Les cartes graphiques ou GPU permettent d'alléger la charge du traitement graphique sur le CPU. Leur utilisation est donc recommandée pour améliorer les performances du système. Pour plus d'informations sur l'accélération de Hardware et les périphériques compatibles, consultez l'article suivant : [$linkHWaccelearation]"
+        }
+    },
+    "Portuguese": {
+        "Milestone XProtect Version": {
+            "Title": "Élément vérifié : Version de Milestone XProtect",
+            "Why we check": "Rester à jour sur les versions de Milestone XProtect permet aux utilisateurs de profiter des dernières fonctionnalités, capacités et optimisations des performances. Les nouvelles fonctionnalités permettent aux utilisateurs de bénéficier d'une fiabilité accrue, d'une sécurité renforcée et d'un coût total de possession réduit.",
+            "ResultOK": "Actuellement, [$customerName] utilise XProtect [$version].",
+            "ResultFAIL": "[$customerName] utilise la dernière version de XProtect [$version]",
+            "Recommendation": "Milestone a récemment publié la dernière version de XProtect [$ActualVersion]. Milestone recommande la mise à niveau vers XProtect [$ActualVersion], pour profiter des nouvelles fonctionnalités et capacités du logiciel. Cela augmente la fiabilité et la sécurité de votre système. Voici un lien vers notre outil de comparaison des versions : [$linkComparisonTool]"
+        },
+        "Milestone Care Status": {
+            "English": {
+                "Title": "Checked Item: Milestone Care Status",
+                "Why we check": "Le maintien du statut actif de Milestone Care Plus permet aux utilisateurs de passer à la dernière version de Milestone XProtect dès sa sortie, sans frais supplémentaires. Le maintien du statut actif Care Premium permet aux utilisateurs d'avoir un accès direct au support technique de Milestone 24 heures sur 24 et 7 jours sur 7. Les utilisateurs bénéficient également d'une priorité accrue pour les appels téléphoniques et tous les cas d'assistance Care Premium bénéficient d'un accord de niveau de service (SLA) pour le temps de première réponse et la fréquence de mise à jour du statut.",
+                "ResultOK": "[$nom du client] qui bénéficie de Care Premium et qui expirera le [$datecareplusexpirantion].",
+                "ResultFAIL1": "Actuellement, votre statut Milestone Care Plus vous permet d'obtenir une licence gratuite pour la dernière version disponible du produit, [$latestversion]",
+                "ResultFAIL2": "Aucun Care Plus trouvé dans le système [$ServerNumbers]",
+                "Recommendation": "Un contrat Care actif vous donne accès aux mises à jour dès qu'elles sont publiées, sans frais supplémentaires, vous permettant ainsi de rester mis-à-jour de ce que notre logiciel a à offrir. Care Premium vous donne également des droits supplémentaires tels que l'accord de niveau de service, l'accès au support 24/7 et la priorité dans la file d'attente téléphonique. Vous pouvez trouver plus d'informations sur Care à l'adresse [$linkcareplusinfo]."
+            },
+            "XProtect Cumulative Updates": {
+                "Title": "Élément vérifié : Mises à jour cumulatives XProtect",
+                "Why we check": "Les mises à jour cumulatives XProtect comprennent tous les correctifs disponibles pour une version spécifique de XProtect. Ces correctifs sont compilés dans des exécutables faciles à installer et sont mis à jour périodiquement tout au long du cycle de vie d'une version du logiciel. Il est fortement recommandé d'appliquer les dernières mises à jour cumulatives de XProtect à votre installation, car elles résolvent des bogues connus et d'autres erreurs système.",
+                "ResultFAIL": "Aucun hotfix ni correctif n'a été trouvé installé sur l'un des serveurs suivants [$ServerNumbers] XXXXXX : [$XProtectComponents]. ",
+                "ResultOK": "Les correctifs suivants ont été trouvés [$ServerNumbers]",
+                "Recommandation": "Nous vous recommandons d'installer les mises à jour cumulatives disponibles pour la version correspondante du produit sur l'ensemble de votre système [$linkDonwloadHotfix]"
+            },
+            "Antivirus Presence": {
+                "Title": "Élément vérifié : Présence d'un antivirus",
+                "Why we check": "Un logiciel antivirus configuré avec une analyse en temps réel peut être un élément important de votre stratégie de sécurité informatique, mais il peut interférer avec le logiciel XProtect. Milestone recommande de configurer le logiciel antivirus de sorte que les processus et les chemins d'enregistrement XProtect soient exclus de l'analyse en temps réel.",
+                "ResultOK": "Logiciel antivirus trouvé et configuré sur les serveurs [$ServerNumbers] ",
+                "ResultFAIL": "Logiciel antivirus non trouvé ou non configuré sur les serveurs [$ServerNumbers]",
+                "Recommendation": "Dans le cas où l'utilisation d'un Antivirus est nécessaire dans votre système, il est recommandé de consulter l'article suivant : KB 000001004 - Configurer un logiciel antivirus sur les systèmes XProtect (meilleures pratiques) [$linkAVkb]."
+            }
+        },
+        "Media Deletion Due to Low Disk Space ": {
+            "Title": "Élément vérifié : Suppression des médias en raison du manque d'espace disque",
+            "Why we check": "Pourquoi nous vérifions: Lorsque l'espace disque libre dans les chemins d'enregistrement XProtect passe sous certains seuils, les supports enregistrés risquent d'être supprimés. Les utilisateurs souhaitent souvent éviter ce scénario, car des suppressions inattendues pourraient signifier une perte de connaissance de la situation ou de conformité réglementaire. L'ajustement de la configuration d'enregistrement ou du matériel de stockage peut empêcher ce scénario.",
+            "ResultFAIL": "Pendant la session [$RSnumbers] des serveurs ont été trouvés installés et configurés : {$LowDiskErros}",
+            "ResultOK": "Il n'y a pas de suppression de média en raison d'un espace disque insuffisant.",
+            "Recommendation": "Aucune recommandation supplémentaire. Le système de stockage fonctionne en bon état."
+        },
+        "Media Deletion Due to Overflow": {
+            "Title": "Élément vérifié : Suppression des médias en raison d'un débordement",
+            "Why we check": "Lorsque la quantité de supports enregistrés entrants dépasse la capacité d'écriture du matériel d'enregistrement et de stockage, les supports risquent d'être supprimés en raison d'un scénario appelé ",
+            "Media Overflow": "Les utilisateurs souhaitent souvent éviter ce scénario,car des suppressions inattendues peuvent entraîner une perte de connaissance de la situation ou de conformité réglementaire.L 'ajustement de la configuration de l'enregistrement ou du matériel de stockage peut empêcher ce scénario.",
+            "ResultOK": "Lors de l'examen des journaux des serveurs d'enregistrement de [$RSnumbers], nous n'avons pas trouvé de messages de débordement dans les journaux",
+            "ResultFAIL": "Dans l'examen des journaux des serveurs d'enregistrement [$RSnumbers], nous avons trouvé: XXXXXX",
+            "Recommendation": "Il est suggéré d'examiner et de suivre les indications des articles suivants pour le serveur d'enregistrement [$linkRSbestpract]."
+        },
+        "System RAM utilization": {
+            "Title": "Élément vérifié : utilisation de la RAM du système",
+            "Why we check": "Le maintien d'une utilisation appropriée de la RAM du système est important pour des performances et une fiabilité optimales. La plupart des applications XProtect ont des exigences minimales de 2 Go de RAM système, mais de la RAM supplémentaire peut être nécessaire pour les systèmes plus grands. Les quantités typiquement recommandées pour de meilleures performances sont de 16 ou 32 Go. L'utilisation recommandée doit être inférieure à 70 % de l'utilisation maximale.   ",
+            "ResultOK": "Le serveur [$ServerNumbers] répond aux exigences minimales selon les recommandations du Milestone.",
+            "ResultFAIL": "Le serveur [$ServerNumbers] ne correspond pas aux exigences minimales selon les recommandations du Milestone.",
+            "Recommendation": "Aucun problème d'utilisation élevée des ressources RAM n'a été constaté sur les serveurs vérifiés. Il est suggéré de maintenir un contrôle des performances de l'équipement utilisé pour le serveur ou les clients, en faisant attention aux processus liés à Milestone qui peuvent entraîner une augmentation de la consommation."
+        },
+        "System CPU utilization": {
+            "Title": "Élément vérifié : Utilisation du CPU du système",
+            "Why we check": "Le maintien d'une utilisation appropriée du CPU du système est important pour des performances et une fiabilité optimales. XProtect s'installera sur la plupart des processeurs modernes Intel ou AMD x86 à architecture 64 bits (ou équivalent virtuel), mais les systèmes plus importants nécessiteront des processeurs plus performants. L'utilisation recommandée doit être inférieure à 70 % de l'utilisation maximale.  ",
+            "ResultOK": "Aucun problème d'utilisation élevée des ressources du processeur n'a été constaté sur les serveurs vérifiés [$ServerNumbers].",
+            "ResultFAIL": "Problèmes d'utilisation élevée des ressources CPU trouvés sur les serveurs vérifiés [$ServerNumbers]",
+            "Recommendation": " Il est suggéré de maintenir un contrôle des performances de l'équipement utilisé pour le serveur ou les clients, en faisant attention aux processus liés à Milestone qui peuvent entraîner une augmentation de la consommation.Dans le cas d'ordinateurs exécutant Smart Client, il est suggéré de revoir le nombre de caméras par vue pour éviter une consommation élevée de ressources CPU lorsqu'une carte graphique n'est pas disponible."
+        },
+        "Failover Configuration": {
+            "Title": "Élément vérifié : Configuration du Serveur d'enregistrement de redundance",
+            "Why we check": "Les serveurs d'enregistrement de redondance sont utilisés pour protéger un système XProtect contre les temps d'arrêt non planifiés du système. Il est recommandé d'exécuter des serveurs de redondance sur tout serveur d'enregistrement critique XProtect Corporate ou XProtect Expert où l'archivage n'est pas activé. Cela permettra un enregistrement vidéo ininterrompu dans le cas où l'index de la base de données des médias doit être reconstruit. ",
+            "ResultOK": "Serveur d'enregistrement de redondance trouvé ou configuré sur cette installation [$RSnumbers].",
+            "ResultFAIL": "Serveur d'enregistrement de redondance non trouvé ou non configuré sur cette installation [$RSnumbers].",
+            "Recommendation": "Dans le cas d'un système d'exploitation critique, l'utilisation du Serveur d'Enregistrement de Redondance est recommandée. Pour plus d'informations sur le serveur d'enregistrement de redondance, suivez les instructions du manuel de l'administrateur : [$linkAdminManual].  "
+        },
+        "Hardware acceleration capability": {
+            "Title": "Élément vérifié : capacité d'accélération de Hardware ",
+            "Why we check": "Le logiciel XProtect peut décharger les tâches de détection de mouvement du serveur d'enregistrement sur certains GPU Intel ou Nvidia. Ce déchargement des tâches de calcul libère des ressources de performance sur le CPU et contribue à réduire le coût total de possession en permettant aux utilisateurs d'exécuter plus de caméras sur un serveur d'enregistrement, sans atteindre les limites de performance de leur CPU. Les CPU Intel avec la technologie Quick Sync Video ou les GPU Nvidia avec Keplar et les chipsets plus récents sont nécessaires pour activer la détection de mouvement accélérée par le Hardware.",
+            "ResultOK": "Cartes GPU ou Quick Sync Video trouvées dans les serveurs [$RSnumbers]",
+            "ResultFAIL": "Aucune carte graphique GPU ni Quick Sync Video n'a été trouvée dans les serveurs [$RSnumbers]",
+            "Recommendation": "Les cartes graphiques ou GPU permettent d'alléger la charge du traitement graphique sur le CPU. Leur utilisation est donc recommandée pour améliorer les performances du système. Pour plus d'informations sur l'accélération de Hardware et les périphériques compatibles, consultez l'article suivant : [$linkHWaccelearation]"
+        }
+    }
+}
